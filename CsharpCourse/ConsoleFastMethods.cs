@@ -41,9 +41,22 @@ public class ConsoleFastMethods : Exception
     {
         string result = "";
         cwl(excp);
+        // TODO : get the error line
         return result;
     }
     public Exception? TryToDo(Action act)
+    {
+        try
+        {
+            act.Invoke();
+        }
+        catch (Exception excp)
+        {
+            return excp;
+        }
+        return null;
+    }
+    public static Exception? sTryToDo(Action act)
     {
         try
         {

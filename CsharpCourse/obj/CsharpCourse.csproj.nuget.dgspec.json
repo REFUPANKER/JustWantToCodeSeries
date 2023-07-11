@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Computer\\Documents\\Software\\CSharp\\CsharpCourse\\CsharpCourse.csproj": {}
+    "C:\\Users\\Computer\\Documents\\Software\\CSharp\\CSharp_JWTs\\CsharpCourse.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Computer\\Documents\\Software\\CSharp\\CsharpCourse\\CsharpCourse.csproj": {
+    "C:\\Users\\Computer\\Documents\\Software\\CSharp\\CSharp_JWTs\\CsharpCourse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Computer\\Documents\\Software\\CSharp\\CsharpCourse\\CsharpCourse.csproj",
+        "projectUniqueName": "C:\\Users\\Computer\\Documents\\Software\\CSharp\\CSharp_JWTs\\CsharpCourse.csproj",
         "projectName": "CsharpCourse",
-        "projectPath": "C:\\Users\\Computer\\Documents\\Software\\CSharp\\CsharpCourse\\CsharpCourse.csproj",
+        "projectPath": "C:\\Users\\Computer\\Documents\\Software\\CSharp\\CSharp_JWTs\\CsharpCourse.csproj",
         "packagesPath": "C:\\Users\\Computer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Computer\\Documents\\Software\\CSharp\\CsharpCourse\\obj\\",
+        "outputPath": "C:\\Users\\Computer\\Documents\\Software\\CSharp\\CSharp_JWTs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",

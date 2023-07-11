@@ -1,7 +1,8 @@
 public class MemberManager : ConsoleFastMethods
 {
-    MembersList members = new MembersList();
-
+    private MembersList members = new MembersList();
+    public delegate void MemberAdded();
+    public event MemberAdded? OnMemberAdded;
     ///<summary>
     /// member syntax : name id value
     /// spaces not allowed
@@ -9,24 +10,102 @@ public class MemberManager : ConsoleFastMethods
     public void AddMember(Member member)
     {
         members.AddMember(member);
-        LogChanges("Member added");
+        OnMemberAdded?.Invoke();
+        WriteLineColorized(ConsoleColor.Yellow, "Press enter to continue");
+        Console.ReadKey();
     }
 
-    public Member GetMemberVariablesFromInput()
+    public void RemoveMember(Member member)
     {
-        Member nmem = new Member();
+        members.RemoveMember(member);
+        WriteLineColorized(ConsoleColor.Yellow, "Press enter to continue");
+        Console.ReadKey();
+    }
+
+    public void ListMembers()
+    {
+        Console.Clear();
+        members.ShowList();
+        WriteLineColorized(ConsoleColor.Yellow, "Press enter to continue");
+        Console.ReadKey();
+    }
+
+    ///<summary>
+    /// Gets member data from input<br/>
+    /// returns Member?
+    ///</summary>
+    public Member? GetMemberVariablesFromInput()
+    {
+        Member? nmem = new Member();
         WriteLineColorized(ConsoleColor.Yellow, "[!]Creating member locks reading input while getting values");
         WriteColorized(ConsoleColor.Green, "Id :");
-        if(TryToDo(() =>
+        if (TryToDo(() =>
         {
             nmem.ID = Convert.ToInt32(Console.ReadLine());
-        })!=null){
-            WriteLineColorized(ConsoleColor.Red,"Exception thrown at get/set memberID");
+            while (nmem.ID < 1)
+            {
+                WriteColorized(ConsoleColor.Red, "Id must be higher than 0 :");
+                nmem.ID = Convert.ToInt32(Console.ReadLine());
+            }
+        }) != null)
+        {
+            WriteLineColorized(ConsoleColor.Red, "Exception thrown at get/set memberID");
+            return null;
         }
-        WriteColorized(ConsoleColor.Green, "Name :");
-        nmem.Name = "" + Console.ReadLine();
-        WriteColorized(ConsoleColor.Green, "Surname :");
-        nmem.Surname = "" + Console.ReadLine();
+        else
+        {
+            WriteColorized(ConsoleColor.Green, "Name :");
+            nmem.Name = "" + Console.ReadLine();
+            while (string.IsNullOrEmpty(nmem.Name) == true)
+            {
+                WriteColorized(ConsoleColor.DarkRed, "[!] Name :");
+                nmem.Name = "" + Console.ReadLine();
+            }
+
+            WriteColorized(ConsoleColor.Green, "Surame :");
+            nmem.Surname = "" + Console.ReadLine();
+            while (string.IsNullOrEmpty(nmem.Surname) == true)
+            {
+                WriteColorized(ConsoleColor.DarkRed, "[!] Surname :");
+                nmem.Surname = "" + Console.ReadLine();
+            }
+        }
         return nmem;
     }
+
+    public Member? GetMemberFromID(bool showMember = false)
+    {
+        Member? foundMember = null;
+        WriteLineColorized(ConsoleColor.Yellow, "[!]Getting Member from id locks reading input");
+        int entry = -1;
+        if (TryToDo(() =>
+        {
+            WriteColorized(ConsoleColor.Green, "Member ID: ");
+            entry = Convert.ToInt32(Console.ReadLine());
+            foreach (var item in members.GetMembers())
+            {
+                if (item.ID == entry)
+                {
+                    foundMember = item;
+                }
+            }
+        }) != null)
+        {
+            WriteLineColorized(ConsoleColor.Red, "Exception thrown at get member with ID");
+        }
+        if (showMember && foundMember != null)
+        {
+            foundMember.ListData(true);
+            WriteLineColorized(ConsoleColor.Yellow, "Press enter to continue");
+            Console.ReadKey();
+        }
+        if (foundMember == null)
+        {
+            WriteLineColorized(ConsoleColor.Red, $"Cant find member with this id : {entry}");
+            WriteLineColorized(ConsoleColor.Yellow, "Press enter to continue");
+            Console.ReadKey();
+        }
+        return foundMember;
+    }
+
 }

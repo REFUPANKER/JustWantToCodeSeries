@@ -21,7 +21,7 @@ public class MembersList : ConsoleFastMethods
     {
         for (int i = 0; i < members.Length; i++)
         {
-            if (members[i].Name==name)
+            if (members[i].Name == name)
             {
                 return members[i];
             }
@@ -29,8 +29,14 @@ public class MembersList : ConsoleFastMethods
         return null;
     }
     #endregion
+
     public void AddMember(Member member)
     {
+        if (member == null)
+        {
+            WriteLineColorized(ConsoleColor.Red, "Member cant be null");
+            return;
+        }
         Member[] newMembers = new Member[members.Length + 1];
         for (int i = 0; i < this.members.Length; i++)
         {
@@ -38,10 +44,12 @@ public class MembersList : ConsoleFastMethods
         }
         newMembers[newMembers.Length - 1] = member;
         members = newMembers;
+        
+        LogChanges("Member added");
     }
     public void RemoveMember(Member member)
     {
-        if (Contains(member))
+        if (member != null && Contains(member))
         {
             Member[] newMembers = new Member[members.Length - 1];
             int ix = 0;
@@ -53,6 +61,7 @@ public class MembersList : ConsoleFastMethods
                 }
             }
             members = newMembers;
+            LogChanges("Member removed");
         }
         else
         {
@@ -75,10 +84,15 @@ public class MembersList : ConsoleFastMethods
 
     public void ShowList()
     {
-        LogChanges("Listing Members");
-        foreach (var item in members)
+        WriteLineColorized(ConsoleColor.Green, CreateStringLine("=", 10) + "Listing Members" + CreateStringLine("=", 10));
+        for (int i = 0; i < members.Length; i++)
         {
-            cwl(item.Name);
+            members[i].ListData(false);
+            if (i + 1 < members.Length)
+            {
+                WriteLineColorized(ConsoleColor.Green, CreateStringLine("-", 20));
+            }
         }
+        WriteLineColorized(ConsoleColor.Green, CreateStringLine("=", 15));
     }
 }
