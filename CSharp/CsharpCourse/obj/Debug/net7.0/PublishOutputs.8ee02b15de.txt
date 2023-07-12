@@ -1,0 +1,5 @@
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CsharpCourse\bin\Debug\net7.0\publish\CsharpCourse.exe
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CsharpCourse\bin\Debug\net7.0\publish\CsharpCourse.dll
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CsharpCourse\bin\Debug\net7.0\publish\CsharpCourse.deps.json
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CsharpCourse\bin\Debug\net7.0\publish\CsharpCourse.runtimeconfig.json
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CsharpCourse\bin\Debug\net7.0\publish\CsharpCourse.pdb
