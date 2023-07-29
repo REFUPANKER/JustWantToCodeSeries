@@ -1,0 +1,15 @@
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CSharp\CsharpCourse\bin\Debug\net7.0\win-x64\CsharpCourse.exe
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CSharp\CsharpCourse\bin\Debug\net7.0\win-x64\CsharpCourse.deps.json
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CSharp\CsharpCourse\bin\Debug\net7.0\win-x64\CsharpCourse.runtimeconfig.json
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CSharp\CsharpCourse\bin\Debug\net7.0\win-x64\CsharpCourse.dll
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CSharp\CsharpCourse\bin\Debug\net7.0\win-x64\CsharpCourse.pdb
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CSharp\CsharpCourse\obj\Debug\net7.0\win-x64\CsharpCourse.csproj.AssemblyReference.cache
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CSharp\CsharpCourse\obj\Debug\net7.0\win-x64\CsharpCourse.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CSharp\CsharpCourse\obj\Debug\net7.0\win-x64\CsharpCourse.AssemblyInfoInputs.cache
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CSharp\CsharpCourse\obj\Debug\net7.0\win-x64\CsharpCourse.AssemblyInfo.cs
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CSharp\CsharpCourse\obj\Debug\net7.0\win-x64\CsharpCourse.csproj.CoreCompileInputs.cache
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CSharp\CsharpCourse\obj\Debug\net7.0\win-x64\CsharpCourse.dll
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CSharp\CsharpCourse\obj\Debug\net7.0\win-x64\refint\CsharpCourse.dll
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CSharp\CsharpCourse\obj\Debug\net7.0\win-x64\CsharpCourse.pdb
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CSharp\CsharpCourse\obj\Debug\net7.0\win-x64\CsharpCourse.genruntimeconfig.cache
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CSharp\CsharpCourse\obj\Debug\net7.0\win-x64\ref\CsharpCourse.dll

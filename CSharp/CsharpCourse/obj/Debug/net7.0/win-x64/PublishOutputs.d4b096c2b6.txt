@@ -1,0 +1,2 @@
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CSharp\CsharpCourse\bin\Debug\net7.0\win-x64\publish\CsharpCourse.pdb
+C:\Users\Computer\Documents\Software\Github\JustWantToCodeSeries\CSharp\CsharpCourse\bin\Debug\net7.0\win-x64\publish\CsharpCourse.exe

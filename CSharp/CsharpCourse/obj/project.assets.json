@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Computer\\Documents\\Software\\Github\\JustWantToCodeSeries\\CsharpCourse\\CsharpCourse.csproj",
+      "projectUniqueName": "C:\\Users\\Computer\\Documents\\Software\\Github\\JustWantToCodeSeries\\CSharp\\CsharpCourse\\CsharpCourse.csproj",
       "projectName": "CsharpCourse",
-      "projectPath": "C:\\Users\\Computer\\Documents\\Software\\Github\\JustWantToCodeSeries\\CsharpCourse\\CsharpCourse.csproj",
+      "projectPath": "C:\\Users\\Computer\\Documents\\Software\\Github\\JustWantToCodeSeries\\CSharp\\CsharpCourse\\CsharpCourse.csproj",
       "packagesPath": "C:\\Users\\Computer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Computer\\Documents\\Software\\Github\\JustWantToCodeSeries\\CsharpCourse\\obj\\",
+      "outputPath": "C:\\Users\\Computer\\Documents\\Software\\Github\\JustWantToCodeSeries\\CSharp\\CsharpCourse\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,6 +60,10 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+            "version": "[7.0.4, 7.0.4]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
             "version": "[7.0.4, 7.0.4]"
           },
           {
