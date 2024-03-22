@@ -6,10 +6,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     
-    <PublishSingleFile>true</PublishSingleFile>
-    <SelfContained>false</SelfContained><!-- app size rises if you set this to true because adds all dlls into output file -->
+    
+    <!-- app size rises if you set this to true because adds all dlls into output file -->
+    <!-- <SelfContained>false</SelfContained>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    <PublishReadyToRun>true</PublishReadyToRun>
+    <PublishReadyToRun>true</PublishReadyToRun> 
+    <PublishSingleFile>true</PublishSingleFile>
+    -->
 
   </PropertyGroup>
 

@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fFgIiSk5aj92Mf0/JdURg/8Y4C+/MNgN70KV29jXuQnw09SaO9GP3ZjSsARHqlERzkY7IP22mHV8fyHy0OJLUA==",
+  "dgSpecHash": "ELiDkmpqM+BKEqsMuvE8ZPqMNnsnRDA+o6duaObbCUE4FVW3LbRg6hmEGfHAnYORYFJZrKd4qya2oUbLmxfDwA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Computer\\Documents\\Software\\Github\\JustWantToCodeSeries\\CSharp\\CsharpCourse\\CsharpCourse.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Computer\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.4\\microsoft.netcore.app.runtime.win-x64.7.0.4.nupkg.sha512",
-    "C:\\Users\\Computer\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.4\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.4.nupkg.sha512",
-    "C:\\Users\\Computer\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.4\\microsoft.aspnetcore.app.runtime.win-x64.7.0.4.nupkg.sha512",
-    "C:\\Users\\Computer\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\7.0.4\\microsoft.netcore.app.crossgen2.win-x64.7.0.4.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
